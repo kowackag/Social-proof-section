@@ -1,32 +1,42 @@
-# Front-end Style Guide
+# Frontend Mentor - Social proof section solution
 
-## Layout
+This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-The designs were created to the following widths:
+## Table of contents
 
-- Mobile: 375px
-- Desktop: 1440px
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Author](#author)
 
-## Colors
 
-### Primary
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-Very Dark Magenta: hsl(300, 43%, 22%)
-Soft Pink: hsl(333, 80%, 67%)
+## Overview
 
-### Neutral
+### The challenge
 
-Dark Grayish Magenta: hsl(303, 10%, 53%)
-Light Grayish Magenta: hsl(300, 24%, 96%)
-White: hsl(0, 0%, 100%)
+Users should be able to:
 
-## Typography
+- View the optimal layout for the section depending on their device's screen size
 
-### Body Copy
+### Links
 
-- Font size: 15px
+- Solution URL: [solution URL here](https://github.com/kowackag/social-proof-section.git)
+- Live Site URL: [live site URL here](https://kowackag.github.io/social-proof-section/)
 
-### Font
+## My process
 
-- Family: [Spartan](https://fonts.google.com/specimen/Spartan)
-- Weights: 400, 500, 700
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+
+## Author
+
+- Website - [Małgorzata Kowacka]
+- Frontend Mentor - [@kowackag](https://www.frontendmentor.io/profile/kowackag)
