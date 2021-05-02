@@ -8,35 +8,31 @@ html {
     height: 100vh;
 }
 
-body {
-    min-height: 100%;
+.page {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    min-height: 100%;
 }
 
 .container {
     display: flex;
     flex-direction: column;
+    margin: auto;
+    padding: 3vh 3vw 0;
     max-width: 1440px;
     height: 900px;
-    padding: 3vh 3vw 0;
-    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
-    background-repeat: no-repeat, no-repeat;
-    background-position: top left, bottom right;
-    /* background: url(./images/bg-pattern-top-desktop.svg) top left no-repeat, url(./images/bg-pattern-bottom-desktop.svg) bottom right no-repeat; */
+    background: url(./images/bg-pattern-top-desktop.svg) top left no-repeat, url(./images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
     font-family: "Spartan", sans-serif;
 }
 
-/*******container-upper-card**********/
+/*******HEADER_BOX**********/
 
-.container__upper-part {
+.page__header-box {
     display: flex;
 }
 
-/* *****header****** */
+/******header-box****** */
 
-.header {
+.page__header {
     width: 45%;
 }
 
@@ -55,28 +51,29 @@ body {
 
 /*******rates*******/
 
-.container__rates {
-    width: 55%;
+.page__rates {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 55%;
 }
 
 .rate-card {
     width: 75%;
-    line-height: 60px;
-    background-color: hsl(300, 24%, 96%);
     border-radius: 8px;
+    background-color: hsl(300, 24%, 96%);
+    line-height: 60px;
 }
 
 .rate-card__icon-stars {
-    float: left;
+    display: inline-block;
     margin: 0 30px;
-    color: #E39852;
     letter-spacing: 5px;
+    color: #E39852;
 }
 
 .rate-card__info {
+    display: inline-block;
     font-weight: 700;
     color: hsl(300, 43%, 22%);
 }
@@ -89,18 +86,19 @@ body {
     align-self: flex-end;
 }
 
-/*********section opinion*********/
+/*********OPINION-BOX*********/
 
-.container__opinion {
-    width: 100%;
-    padding: 30px 0;
+.page__opinion-box {
+    flex-grow: 1;
     display: flex;
     justify-content: space-between;
-    flex-grow: 1;
+    padding: 30px 0;
+    width: 100%;
 }
 
 /*********opinion-card*********/
-.container__opinion-card {
+
+.page__opinion-card {
     padding: 20px;
 }
 
@@ -110,17 +108,17 @@ body {
     align-items: center;
     width: 32%;
     height: 320px;
-    background-color: hsl(300, 43%, 22%);
     border-radius: 10px;
+    background-color: hsl(300, 43%, 22%);
     font-size: 15px;
     line-height: 2em;
     color: hsl(300, 24%, 96%);
 }
 
 .opinion-card__image {
+    margin: 20px;
     width: 18%;
     border-radius: 50%;
-    margin: 20px;
 }
 
 .opinion-card__name {
@@ -145,7 +143,7 @@ body {
 
 /******** footer *********/
 
-.container__footer {
+.page__footer {
     margin-bottom: 10px;
     font-size: 11px;
     text-align: center;
@@ -166,7 +164,6 @@ body {
     }
 
     .rate-card__icon-stars {
-        float: left;
         margin: 0 10px;
     }
 
@@ -176,7 +173,7 @@ body {
         line-height: 1.8em;
     }
 
-    .container__footer {
+    .page__footer {
         display: none;
     }
 }
@@ -189,14 +186,13 @@ body {
         background-repeat: no-repeat, no-repeat;
     }
 
-    .container__upper-part {
+    .page__header-box {
         display: flex;
         flex-direction: column;
-        align-items: center;
         margin: 0 auto;
     }
 
-    .container__header {
+    .page__header {
         width: 100%;
         text-align: center;
     }
@@ -205,11 +201,11 @@ body {
         padding: 20px 40px;
     }
 
-    .container__rates {
+    .page__rates {
         width: 100%;
     }
 
-    .container__rate-card {
+    .page__rate-card {
         margin: 20px 0;
     }
 
@@ -220,14 +216,14 @@ body {
     }
 
     .rate-card__icon-stars {
-        float: none;
+        display: block;
     }
 
-    .container__opinion {
+    .page__opinion-box {
         flex-direction: column;
     }
 
-    .container__opinion-card {
+    .page__opinion-card {
         margin: 20px 0;
     }
 
